@@ -2,6 +2,16 @@
 
 
 
+- [Typora](#Typora)
+- [Sublime](#Sublime)
+- [Snipaste](#Snipaste)
+- [NeatDownloadManager](#NeatDownloadManager)
+- [Mos](#Mos)
+
+
+
+
+
 ## Typora
 
 
@@ -161,6 +171,39 @@ PS：无须再输入 License，且更新默认已禁用。
 
 
 
+
+
+如果觉得不保险，可将如下内容添加到 `hosts` 文件中：
+
+
+
+```
+# sublime text user START
+127.0.0.1 www.sublimetext.com
+127.0.0.1 license.sublimehq.com
+50.116.34.243 sublime.wbond.net
+50.116.34.243 packagecontrol.io
+127.0.0.1 45.55.255.55
+127.0.0.1 45.55.41.223
+# sublime text user END
+```
+
+
+
+`hosts` 文件路径：`/etc/hosts`。按下快捷键 `Cmd + Shift + G`，输入该路径即可。
+
+
+
+如果要自己破解，可参考：https://www.52pojie.cn/thread-925256-1-1.html
+
+
+
+
+
+
+
+
+
 ### 主要配置
 
 
@@ -293,4 +336,47 @@ https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgi
 
 
 综上，建议都使用 **NDM**。
+
+
+
+
+
+
+
+## Mos
+
+
+
+### 简介
+
+
+
+##
+
+- 软件说明：一款 Mac 上插鼠标时，鼠标滑轮逆转滑动方向，使之符合 Windows 使用习惯的工具。
+- 软件版本：基本上用最新版即可。
+- 官网链接：https://mos.caldis.me/
+- 运行环境：`macOS Mojave `
+
+
+
+### 软件安装
+
+
+
+软件下载需要从 GitHub 下载，链接：https://github.com/Caldis/Mos/releases/
+
+
+
+### 主要配置
+
+
+
+- 建议设置成开机启动。
+
+- 其他配置默认即可。
+
+
+
+当然，如果使用 Mac 时，不用鼠标，也可以不装该软件。
 
