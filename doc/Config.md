@@ -171,6 +171,8 @@ Sublime 有许多丰富的插件，这里暂不配置。
 
 
 
+
+
 ## Snipaste
 
 
@@ -219,4 +221,76 @@ PS：`贴图` 功能是一般的截图软件所不具备的，这也是其优势
 
 
 
+
+
+
+## NeatDownloadManager
+
+
+
+### 简介
+
+### 
+
+- 软件说明：一款多线程下载工具。
+- 软件版本：基本上用最新版即可。
+- 官网链接：https://www.neatdownloadmanager.com/
+- 运行环境：`macOS Mojave` | `Windows 10`
+
+
+
+### 软件安装
+
+
+
+直接从官网下载安装即可。
+
+
+
+另外还需要使用配套的 Chrome 扩展程序 `NeatDownloadManager Extension`：
+
+https://chrome.google.com/webstore/detail/neatdownloadmanager-exten/cpcifbdmkopohnnofedkjghjiclmhdah
+
+
+
+PS：**NeatDownloadManager** 可简称为 **NDM**。
+
+
+
+### 主要配置
+
+
+
+无
+
+
+
+### 和IDM的区别
+
+
+
+**IDM** 即 **Internet Download Manager**，官网链接：http://www.internetdownloadmanager.com/
+
+
+
+也需要使用配套的 Chrome 扩展程序 `IDM Integration Module`：
+
+https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgilojfohadhhmbhlaek
+
+
+
+同：
+
+- 都是多线程下载工具。
+
+
+
+异：
+
+- **IDM** 仅适用于 Windows 系统，且需要破解才能使用。
+- **NDM** 适用于 Mac 和 Windows 双系统，且无需破解，即可使用。
+
+
+
+综上，建议都使用 **NDM**。
 
