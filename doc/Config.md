@@ -9,7 +9,7 @@
 ### 简介
 
 - 软件说明：一款用于写 Markdown 文档的编辑器。
-- 软件版本：目前是 Version 0.9.9.29.2 (3650)，基本用最新版即可。
+- 软件版本：基本上用最新版即可。
 - 官网链接：https://typora.io/
 - 运行环境：`macOS Mojave` | `Windows 10`
 
@@ -80,7 +80,89 @@
 
 
 
-顶部菜单栏 `Edit` -> `Spelling and Grammar` -> 'Correct Spelling Automatically'
+顶部菜单栏 `Edit` -> `Spelling and Grammar` -> `Correct Spelling Automatically`
 
 
 
+
+
+
+
+## Sublime
+
+
+
+### 简介
+
+
+
+- 软件说明：一款轻量级的文本编辑器。
+- 软件版本：3.2.1，即 Build 3210，破解版。
+- 官网链接：http://www.sublimetext.com/
+- 运行环境：`macOS Mojave` 
+
+
+
+### 软件安装
+
+
+
+从百度网盘下载破解版的 **Sublime Text_3.2.1.dmg**
+
+
+
+- 百度网盘路径：`SoftwareInstallationPackage` -> `Mac` -> `Sublime`
+
+
+
+
+
+点击安装时会抛出一个安全提示：
+
+
+
+![Sublime安装-Mac](../img/Sublime安装-Mac(1).jpg)
+
+
+
+
+
+打开 `System Preferences` -> `Security & Privacy`，点击下方的 `Open Anyway`。
+
+
+
+![Sublime安装-Mac安全提示](../img/Sublime安装-Mac(2).jpg)
+
+
+
+
+
+会继续做如下提示，直接点击 `Open` 即可。
+
+
+
+![Sublime安装-Mac安全提示](../img/Sublime安装-Mac(3).jpg)
+
+
+
+
+
+至此，安装成功。
+
+
+
+![Sublime安装-Mac](../img/Sublime安装-Mac(4).jpg)
+
+
+
+PS：无须再输入 License，且更新默认已禁用。
+
+
+
+
+
+### 主要配置
+
+
+
+Sublime 有许多丰富的插件，这里暂不配置。
