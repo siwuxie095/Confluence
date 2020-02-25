@@ -8,6 +8,7 @@
 - [NeatDownloadManager](#NeatDownloadManager)
 - [Mos](#Mos)
 - [ShadowsocksX-NG](#ShadowsocksX-NG)
+- [ShadowsocksX-NG-R8](#ShadowsocksX-NG-R8)
 
 
 
@@ -274,7 +275,6 @@ PS：`贴图` 功能是一般的截图软件所不具备的，这也是其优势
 
 ### 简介
 
-### 
 
 - 软件说明：一款多线程下载工具。
 - 软件版本：基本上用最新版即可。
@@ -351,9 +351,6 @@ https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgi
 ### 简介
 
 
-
-##
-
 - 软件说明：一款 Mac 上插鼠标时，鼠标滑轮逆转滑动方向，使之符合 Windows 使用习惯的工具。
 - 软件版本：基本上用最新版即可。
 - 官网链接：https://mos.caldis.me/
@@ -385,15 +382,14 @@ https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgi
 
 
 
+
+
 ## ShadowsocksX-NG
 
 
 
 ### 简介
 
-
-
-##
 
 - 软件说明：一款「科/学/上/网」工具。
 - 软件版本：尽量用最新版。
@@ -424,3 +420,53 @@ https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgi
 - 建议使用 PAC(Proxy Auto Configure) Mode，不要使用 Global Mode。
 - 其他配置，暂无。
 
+
+
+
+
+
+
+## ShadowsocksX-NG-R8
+
+
+
+### 简介
+
+
+- 软件说明：一款「科/学/上/网」工具。
+- 软件版本：尽量用最新版，目前最新版为 Version 1.4.4-R8 (1)。
+- 官网链接：https://breakwa11.github.io/
+- 运行环境：`macOS Mojave `
+
+
+
+
+
+### 软件安装
+
+
+
+**ShadowsocksX-NG-R8** 全称为 **Next Generation of ShadowsocksX R8**，相当于 Windows 系统下的 **ShadowsocksR**。
+
+
+
+软件需要从 GitHub 下载，链接：https://github.com/shadowsocksr/ShadowsocksX-NG/
+
+
+
+目前(截止 2020/02/25)已被和谐，可从百度网盘下载。
+
+
+
+百度网盘路径：`SoftwareInstallationPackage` -> `Mac` -> `ShadowsocksR`
+
+
+
+
+
+### 主要配置
+
+
+
+- 建议使用 PAC(Proxy Auto Configure) Mode，不要使用 Global Mode。
+- 其他配置，暂无。
