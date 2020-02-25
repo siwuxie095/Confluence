@@ -7,6 +7,7 @@
 - [Snipaste](#Snipaste)
 - [NeatDownloadManager](#NeatDownloadManager)
 - [Mos](#Mos)
+- [ShadowsocksX-NG](#ShadowsocksX-NG)
 
 
 
@@ -364,7 +365,7 @@ https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgi
 
 
 
-软件下载需要从 GitHub 下载，链接：https://github.com/Caldis/Mos/releases/
+软件需要从 GitHub 下载，链接：https://github.com/Caldis/Mos/releases/
 
 
 
@@ -379,4 +380,47 @@ https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgi
 
 
 当然，如果使用 Mac 时，不用鼠标，也可以不装该软件。
+
+
+
+
+
+## ShadowsocksX-NG
+
+
+
+### 简介
+
+
+
+##
+
+- 软件说明：一款「科/学/上/网」工具。
+- 软件版本：尽量用最新版。
+- 官网链接：https://shadowsocks.org/
+- 运行环境：`macOS Mojave `
+
+
+
+### 软件安装
+
+
+
+**ShadowsocksX-NG** 全称为 **Next Generation of ShadowsocksX**，相当于 Windows 系统下的 **Shadowsocks**。
+
+
+
+软件需要从 GitHub 下载，链接：
+
+- latest release：https://github.com/shadowsocks/ShadowsocksX-NG/releases/latest
+- all release：https://github.com/shadowsocks/ShadowsocksX-NG/releases
+
+
+
+### 主要配置
+
+
+
+- 建议使用 PAC(Proxy Auto Configure) Mode，不要使用 Global Mode。
+- 其他配置，暂无。
 
