@@ -9,6 +9,7 @@
 - [Mos](#Mos)
 - [ShadowsocksX-NG](#ShadowsocksX-NG)
 - [ShadowsocksX-NG-R8](#ShadowsocksX-NG-R8)
+- [Telegram](#Telegram)
 - [Flux](#Flux)
 - [Moom](#Moom)
 
@@ -472,6 +473,54 @@ https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgi
 
 - 建议使用 PAC(Proxy Auto Configure) Mode，不要使用 Global Mode。
 - 其他配置，暂无。
+
+
+
+
+
+
+
+## Telegram
+
+
+
+### 简介
+
+- 软件说明：一款加密聊天工具。
+- 软件版本：用最新版即可。
+- 官网链接：https://telegram.org/
+- 运行环境：`macOS Mojave`
+
+
+
+### 软件安装
+
+
+
+直接从官网下载安装即可，需代理。
+
+
+
+也可以关联免代理的非官方版本 **TelePlus**，仅适用于 **Android** 系统。
+
+官网：
+
+- https://teleplus.in/
+- https://teleplusofficial.github.io/
+
+GitHub：
+
+- https://github.com/TelePlusDev/TelePlus-Android
+
+
+
+
+
+### 主要配置
+
+
+
+最主要的是配置代理。
 
 
 
