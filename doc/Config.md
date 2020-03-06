@@ -10,6 +10,7 @@
 - [ShadowsocksX-NG](#ShadowsocksX-NG)
 - [ShadowsocksX-NG-R8](#ShadowsocksX-NG-R8)
 - [Flux](#Flux)
+- [Moom](#Moom)
 
 
 
@@ -514,3 +515,71 @@ https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgi
 
 
 
+
+
+
+
+## Moom
+
+
+
+### 简介
+
+
+- 软件说明：一款控制窗口大小和位置的工具。
+- 软件版本：版本 3.2.11(3231)，破解版。
+- 官网链接：https://manytricks.com/moom/
+- 运行环境：`macOS Mojave`
+
+
+
+### 软件安装
+
+
+
+**Moom** 是 **Many Tricks** 众多工具中的一款，需破解才能使用。
+
+
+
+从百度网盘下载破解版的 **Moom_3.2.11(3231).dmg**
+
+
+
+- 百度网盘路径：`SoftwareInstallationPackage` -> `Mac` -> `Moom`
+
+
+
+
+
+
+
+### 主要配置
+
+
+
+- 设为开机自动启动。
+- 运行为菜单栏程序。
+- 关闭自动检查更新。
+
+
+
+
+
+然后在 **自定义** 中设置如下快捷键：
+
+- **Command -**
+  - 将窗口移到下方显示器(双屏情况下)。
+- **Command =**
+  - 将窗口移到上方显示器(双屏情况下)。
+- **Command 1**
+  - 移动 & 缩放：将窗口设为全屏。
+- **Command 2**
+  - 移动 & 缩放：将窗口缩小在中间。
+- **Command 3**
+  - 移动 & 缩放：将窗口设为左半屏。
+- **Command 4**
+  - 移动 & 缩放：将窗口设为右半屏。
+- **Command 0**
+  - 恢复至原始尺寸(相当于撤销)。
+
+PS：窗口大小为 6 * 4 格。
