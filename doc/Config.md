@@ -9,6 +9,7 @@
 - [Mos](#Mos)
 - [ShadowsocksX-NG](#ShadowsocksX-NG)
 - [ShadowsocksX-NG-R8](#ShadowsocksX-NG-R8)
+- [Flux](#Flux)
 
 
 
@@ -354,7 +355,7 @@ https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgi
 - 软件说明：一款 Mac 上插鼠标时，鼠标滑轮逆转滑动方向，使之符合 Windows 使用习惯的工具。
 - 软件版本：基本上用最新版即可。
 - 官网链接：https://mos.caldis.me/
-- 运行环境：`macOS Mojave `
+- 运行环境：`macOS Mojave`
 
 
 
@@ -394,7 +395,7 @@ https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgi
 - 软件说明：一款「科/学/上/网」工具。
 - 软件版本：尽量用最新版。
 - 官网链接：https://shadowsocks.org/
-- 运行环境：`macOS Mojave `
+- 运行环境：`macOS Mojave`
 
 
 
@@ -436,7 +437,7 @@ https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgi
 - 软件说明：一款「科/学/上/网」工具。
 - 软件版本：尽量用最新版，目前最新版为 Version 1.4.4-R8 (1)。
 - 官网链接：https://breakwa11.github.io/
-- 运行环境：`macOS Mojave `
+- 运行环境：`macOS Mojave`
 
 
 
@@ -470,3 +471,46 @@ https://chrome.google.com/webstore/detail/idm-integration-module/ngpampappnmepgi
 
 - 建议使用 PAC(Proxy Auto Configure) Mode，不要使用 Global Mode。
 - 其他配置，暂无。
+
+
+
+
+
+
+
+## Flux
+
+
+
+### 简介
+
+
+- 软件说明：一款自动调节屏幕亮度的工具，用于护眼。
+- 软件版本：用最新版即可，目前是 Version: 40.1。
+- 官网链接：https://justgetflux.com/
+- 运行环境：`macOS Mojave`
+
+
+
+### 软件安装
+
+
+
+直接从官网下载安装即可。
+
+
+
+
+
+### 主要配置
+
+
+
+主要是设置地理位置，这依赖于谷歌地图，由于国内无法正常访问谷歌服务，所以无法设置。
+
+
+
+不设置也能正常使用就是。
+
+
+
