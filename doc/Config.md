@@ -632,3 +632,49 @@ GitHub：
   - 恢复至原始尺寸(相当于撤销)。
 
 PS：窗口大小为 6 * 4 格。
+
+
+
+
+
+
+
+## Karabiner-Elements
+
+
+
+### 简介
+
+
+- 软件说明：一款修改键盘映射的工具。
+- 软件版本：version 12.7.0，该软件与系统存在一定的对应关系，勿要盲目追求最新版。
+- 官网链接：https://pqrs.org/osx/karabiner/
+- 运行环境：`macOS Mojave`
+
+
+
+
+
+### 软件安装
+
+
+
+直接从官网下载安装，注意当前系统的版本，下载对应的软件版本即可。
+
+
+
+
+
+### 主要配置
+
+
+
+打开 **Preference**：
+
+
+
+在 **Misc** 中，关闭打开软件时自动检查更新，即 取消勾选 **Check for updates on startup**。
+
+
+
+直接在 ./~/.config/karabiner 路径中找到 karabiner.json。
