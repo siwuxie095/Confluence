@@ -12,6 +12,7 @@
 - [Telegram](#Telegram)
 - [Flux](#Flux)
 - [Moom](#Moom)
+- [Karabiner-Elements](#Karabiner-Elements)
 
 
 
