@@ -775,4 +775,11 @@ Line spacing: 1.5;
 （24）VisualVM Launcher
 
 
+5、Tools -> Terminal
+
+设置终端的类型，这里更换为 bash，修改 Shell path 为：C:\Program Files\Git\bin\bash.exe。
+
+PS：Windows 默认的选项有：
+（1）powershell: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+（2）cmd: C:\Windows\system32\cmd.exe
 
