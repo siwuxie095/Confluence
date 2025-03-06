@@ -202,6 +202,70 @@ idea maven项目迁移，从一台电脑复制到另一台电脑后，idea打开
 注意设置 settings.xml，路径：/Users/用户名/.m2/settings.xml
 
 
+#### 设置主题和字体
+
+Appearance & Behavior -> Appearance:
+
+可设置 IDE 的主题和字体。主题（同时设置外观和编辑区）一般使用 Darcula，字体可根据屏幕大小进行调节。
+
+（1）可以选择从外部导入 Dracula 主题（https://draculatheme.com/jetbrains 或 https://github.com/dracula/jetbrains/releases）。
+（2）也可以选择在 Plugin Marketplace 插件市场进行下载安装。
+
+#### 设置编辑区字体
+
+Editor -> Font: 可设置编辑区的字体。
+
+Font: Source Code Pro;
+Size: 20;
+Line spacing: 1.5;
+
+#### 设置注释模板
+
+Editor -> File and Code Templates:
+
+可设置注释模板。在 Includes 选项下找到 File Header 进行设置。这样在创建 Files 支持的文件类型时，就会自动生成设置的注释模板。
+
+这里将模板设为：
+```java
+/**
+ * @author Username
+ * @date ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND}
+ */
+```
+
+
+
+#### idea 插件
+
+Plugin:
+
+安装插件。推荐安装如下插件：
+- .ignore
+- Alibaba Java Coding Guide（废弃，已停止更新，无法适配新版本）
+- ASM Bytecode Outline（暂时不装）
+- CodeGlance Pro
+- FindBugs-IDEA（废弃，搜索不到）
+- Free MyBatis plugin（暂时不装）
+- GenerateAllSetter
+- GsonFormat（暂时不装）
+- JProfiler（暂时不装）
+- leetcode editor（暂时不装）
+- Lombok
+- MapStruct Support（暂时不装）
+- Maven Dependency Helper（暂时不装）
+- Maven Helper（暂时不装）
+- MyBatis Log Plugin（暂时不装）
+- PlantUML integration（暂时不装）
+- PlantUML Syntax Check（暂时不装）
+- PlantUML2DDL（暂时不装）
+- Protobuf Support（暂时不装）
+- Rainbow Brackets
+- Statistic
+- Translation（暂时不装）
+- VisualVM Launcher（暂时不装）
+- GitHub Copilot
+- TONGYI Lingma（暂时不装）
+
 
 ### 微信
 
@@ -220,6 +284,25 @@ idea maven项目迁移，从一台电脑复制到另一台电脑后，idea打开
 
 官网：https://note.youdao.com/note-download/
 
+注意在基本设置里 设置主题为：跟随系统。
+
+关闭开机自启。
+
+关闭自动检查更新。
+
+### 网易云音乐
+
+官网：https://music.163.com/#/download
+
+
+### YesPlayMusic
+
+官网：https://github.com/qier222/YesPlayMusic 
+
+安装：
+```bash
+    brew install --cask yesplaymusic
+```
 
 
 
