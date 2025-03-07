@@ -220,7 +220,42 @@ idea maven项目迁移，从一台电脑复制到另一台电脑后，idea打开
 
 使用 idea 默认自带的 maven 即可，无需额外配置。
 
-注意设置 settings.xml，路径：/Users/用户名/.m2/settings.xml
+注意设置 settings.xml，路径：/Users/jj.li/.m2/settings.xml
+
+
+#### Maven 项目导入报错补丁
+
+升级 idea 2024 后，报错：
+
+```declarative
+'parent.version' is either LATEST or RELEASE (both of them are being deprecated)
+```
+
+原因：
+从 3.5.3 版本开始，Maven 在解析 `pom.xml` 文件时，会将之前提到的错误记录为 POM 模型中的问题。尽管这是一个警告级别的问题，但 IntelliJ IDEA 会将其视为错误。
+
+此补丁修改了 IDEA 中用于解析 Maven 项目的插件类，使其不再返回任何模型错误，从而避免因这些问题导致项目同步失败。
+
+
+补丁导入步骤：
+
+1. 关闭当前运行的 IntelliJ IDEA
+
+2. 打开 IDEA 的安装目录：
+    - 在“应用程序”文件夹中找到 IntelliJ IDEA，右键点击并选择“显示包内容”，然后进入“Contents”目录。
+
+3. 导航至 `plugins/maven-server/lib` 子目录。
+
+4. 备份 `maven-server.jar` 文件，然后用补丁文件 [maven-server.jar](../res/maven-server.jar) 
+   下载的文件替换它。
+
+5. 如果找不到 `maven-server.jar` 文件，请仔细检查目录路径是否正确。
+
+6. 重新启动 IntelliJ IDEA，验证补丁是否生效。
+
+
+
+
 
 
 #### 设置主题和字体
