@@ -195,6 +195,31 @@ Homebrew成功安装后，你需要将Homebrew的路径添加到你的`PATH`环�
 - 软件版本：该软件与系统存在一定的对应关系，勿要盲目追求最新版。
 - 官网链接：https://pqrs.org/osx/karabiner/
 
+- GitHub：https://github.com/pqrs-org/Karabiner-Elements
+
+- 安装：
+```bash
+    brew install --cask karabiner-elements
+```
+
+Karabiner-Elements 和 Karabiner-EventViewer 是同一软件套件中的两个组件，它们共同用于键盘自定义和事件监控。以下是它们的关系和功能：
+
+1. **Karabiner-Elements**：
+    - 这是主要的应用程序，用于自定义和重映射键盘按键。用户可以通过它来更改键盘按键的行为、创建复杂的按键组合、以及调整输入设备的其他功能。
+
+2. **Karabiner-EventViewer**：
+    - 这是一个辅助工具，用于监控和显示键盘事件。它允许用户查看按键输入的实时数据，包括按键的扫描码和事件类型。这对于调试和创建自定义按键映射非常有用，因为用户可以看到每个按键的具体行为。
+
+**关系**：
+- Karabiner-EventViewer 是 Karabiner-Elements 的一部分，主要用于帮助用户理解和分析键盘输入事件，以便更好地配置和使用 Karabiner-Elements 的自定义功能。
+- 两者结合使用，可以更精确地进行键盘配置和问题排查。例如，当某个按键映射没有按预期工作时，用户可以使用 EventViewer 检查按键事件，以找出问题所在。
+
+通过这两个工具，用户可以实现高度个性化的键盘使用体验，满足特定的输入需求。
+
+
+
+配置：
+
 关闭打开软件时自动检查更新，即 取消勾选 **Check for updates on startup**。
 
 注意在系统设置 -> 通用 -> 登录项与扩展 中，将如下两项设置为允许在后台运行：
