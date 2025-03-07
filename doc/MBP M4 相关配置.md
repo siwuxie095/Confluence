@@ -169,7 +169,13 @@ Homebrew成功安装后，你需要将Homebrew的路径添加到你的`PATH`环�
 官网：https://chromewebstore.google.com/category/extensions?hl=zh-cn
 
 
+### NeatDownloadManager
 
+官网：https://www.neatdownloadmanager.com/index.php/en/
+
+可设置开启自启。
+
+注意配合 Chrome 插件使用。
 
 
 ### Snipaste
@@ -177,6 +183,21 @@ Homebrew成功安装后，你需要将Homebrew的路径添加到你的`PATH`环�
 官网：https://www.snipaste.com/download.html
 
 注意：选择免费版本即可，可设置为开机自启
+
+### Karabiner-Elements
+
+- 软件说明：一款修改键盘映射的工具。
+- 软件版本：该软件与系统存在一定的对应关系，勿要盲目追求最新版。
+- 官网链接：https://pqrs.org/osx/karabiner/
+
+关闭打开软件时自动检查更新，即 取消勾选 **Check for updates on startup**。
+
+注意在系统设置 -> 通用 -> 登录项与扩展 中，将如下两项设置为允许在后台运行：
+（1）Karabiner-Elements Non-Privileged Agents
+（2）Karabiner-Elements Privileged Daemons
+
+（其他暂未配置）
+
 
 ### Idea
 
@@ -240,6 +261,7 @@ Editor -> File and Code Templates:
 Plugin:
 
 安装插件。推荐安装如下插件：
+- Dracula Theme（安装后，外观和编辑器会自动采用 Dracula Colorful 主题）
 - .ignore
 - Alibaba Java Coding Guide（废弃，已停止更新，无法适配新版本）
 - ASM Bytecode Outline（暂时不装）
