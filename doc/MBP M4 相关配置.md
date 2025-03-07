@@ -247,7 +247,7 @@ idea maven项目迁移，从一台电脑复制到另一台电脑后，idea打开
 3. 导航至 `plugins/maven-server/lib` 子目录。
 
 4. 备份 `maven-server.jar` 文件，然后用补丁文件 [maven-server.jar](../res/maven-server.jar) 
-   下载的文件替换它。
+   替换它。
 
 5. 如果找不到 `maven-server.jar` 文件，请仔细检查目录路径是否正确。
 
