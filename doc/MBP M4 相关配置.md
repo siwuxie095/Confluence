@@ -30,6 +30,7 @@
 
 #### 常用快捷键
 
+https://support.apple.com/zh-cn/102650
 
 
 
