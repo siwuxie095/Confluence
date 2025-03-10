@@ -317,8 +317,8 @@ Git：https://github.com/Hammerspoon/hammerspoon
 ![Hammerspoon配置.png](../img/Hammerspoon%E9%85%8D%E7%BD%AE.png)
 
 
-配置(左shift+h/j/k/l为左/下/上/右)：
-
+配置：
+1、左shift+h/j/k/l为左/下/上/右（有弊端，无法输入 hjkl 的大写了）
 ```lua
 -- 创建一个事件监听器来检测按键事件
 local keyListener = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
@@ -347,6 +347,22 @@ end)
 
 -- 启动按键监听器
 keyListener:start()
+
+```
+2、左option+h/j/k/l为左/下/上/右
+```lua
+-- Define a function to map keys
+local function mapKey(mods, key, action)
+    hs.hotkey.bind(mods, key, action, nil, action)
+end
+
+-- Map Left Option + H/J/K/L to arrow keys
+local option = {"alt"}
+
+mapKey(option, "h", function() hs.eventtap.keyStroke({}, "left") end)
+mapKey(option, "j", function() hs.eventtap.keyStroke({}, "down") end)
+mapKey(option, "k", function() hs.eventtap.keyStroke({}, "up") end)
+mapKey(option, "l", function() hs.eventtap.keyStroke({}, "right") end)
 
 ```
 
