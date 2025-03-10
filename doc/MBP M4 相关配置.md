@@ -129,6 +129,31 @@ Homebrew成功安装后，你需要将Homebrew的路径添加到你的`PATH`环�
 
 通过这些步骤，你可以确认Homebrew是否已正确安装并正常运行。如果遇到任何问题，通常`brew doctor`会提供有用的诊断信息和建议。
 
+将 Homebrew 设置为不自动更新：
+
+```bash
+    export HOMEBREW_NO_AUTO_UPDATE=1
+```
+
+注意：通过 `echo $SHELL` 可以查看当前使用的 shell，如果是 bash 则创建 `.bash_profile` 文件，如果是 zsh 则创建 `.zshrc` 文件。
+
+这里使用的是 zsh，所以创建 `.zshrc` 文件，然后将上述命令添加到文件中。
+
+```bash
+    touch ~/.zshrc
+    echo 'export HOMEBREW_NO_AUTO_UPDATE=1' >> ~/.zshrc
+    source ~/.zshrc
+```
+
+这样就可以实现不自动更新 Homebrew 了。如果要恢复自动更新，只需将 `export HOMEBREW_NO_AUTO_UPDATE=1` 改为 `export HOMEBREW_NO_AUTO_UPDATE=0` 即可。
+
+一般建议手动更新 Homebrew，以确保软件包的稳定性和兼容性。命令如下：
+
+```bash
+    brew update
+```
+
+
 
 ### 3. Git
 
