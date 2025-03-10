@@ -233,7 +233,7 @@ https://github.com/pqrs-org/Karabiner-Elements/issues/3941#issuecomment-26284326
 （其他暂未配置）
 
 核心配置（Mac本身的修饰键无需调整）：
-![Karabiner键位.jpg](../res/Karabiner%E9%94%AE%E4%BD%8D.jpg)
+![Karabiner键位.jpg](../img/Karabiner%E9%94%AE%E4%BD%8D.jpg)
 
 
 
