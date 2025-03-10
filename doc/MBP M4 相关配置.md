@@ -350,6 +350,8 @@ keyListener:start()
 
 ```
 2、左option+h/j/k/l为左/下/上/右
+
+参考：https://blog.dreamfever.me/posts/2021-03-12-n-ways-of-hammerspoon/#example-1-%E9%94%AE%E4%BD%8D%E6%98%A0%E5%B0%84
 ```lua
 -- Define a function to map keys
 local function mapKey(mods, key, action)
