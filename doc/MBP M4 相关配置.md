@@ -232,6 +232,107 @@ https://github.com/pqrs-org/Karabiner-Elements/issues/3941#issuecomment-26284326
 
 （其他暂未配置）
 
+核心配置（Mac本身的修饰键无需调整）：
+![Karabiner键位.jpg](../res/Karabiner%E9%94%AE%E4%BD%8D.jpg)
+
+
+
+
+### Keyboard Maestro
+
+官网：https://www.keyboardmaestro.com/main/
+
+安装：
+```bash
+    brew install --cask keyboard-maestro
+```
+介绍：https://sspai.com/post/56142
+
+需要付费，破解版如下：
+
+https://macwk.com.cn/soft/keyboard-maestro
+
+激活码：
+- Email Address: me@noplace.com
+- Serial Number: L7A6MFNJH372O37I65
+
+Keyboard Maestro 是一款强大的 macOS 自动化工具，专门用于帮助用户简化重复性任务并提高工作效率。它通过创建宏（macros）来实现自动化操作，这些宏可以执行一系列预定义的动作。以下是 Keyboard Maestro 的一些主要功能和特点：
+
+1. **宏创建**：用户可以创建复杂的宏，包含多个步骤和条件，以自动化几乎任何任务。
+
+2. **触发器**：宏可以通过多种方式触发，包括键盘快捷键、应用程序启动、时间触发器、设备连接等。
+
+3. **动作库**：Keyboard Maestro 提供了丰富的动作库，涵盖文件操作、剪贴板管理、窗口控制、文本处理、网络操作等。
+
+4. **变量和条件**：用户可以使用变量和条件来创建动态宏，根据不同的情况执行不同的动作。
+
+5. **脚本支持**：支持多种脚本语言（如 AppleScript、JavaScript），使用户能够扩展其功能。
+
+6. **用户界面控制**：可以自动化与应用程序的交互，包括点击按钮、选择菜单项等。
+
+Keyboard Maestro 是许多 macOS 用户用来提高生产力的工具，尤其适合那些需要频繁执行重复性任务的人。它的灵活性和强大的功能使其成为自动化工作流程的理想选择。
+
+### Hammerspoon
+
+官网：https://www.hammerspoon.org/
+
+Git：https://github.com/Hammerspoon/hammerspoon
+
+安装： 
+```bash
+    brew install --cask hammerspoon
+```
+
+配置(左shift+h/j/k/l为左/下/上/右)：
+
+```lua
+-- 创建一个事件监听器来检测按键事件
+local keyListener = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function(event)
+    local flags = event:getFlags()
+    local keyCode = event:getKeyCode()
+
+    -- 检查是否按下了左 Shift 键
+    if flags.shift and not flags.cmd and not flags.alt and not flags.ctrl then
+        if keyCode == hs.keycodes.map["h"] then
+            hs.eventtap.keyStroke({}, "left")
+            return true
+        elseif keyCode == hs.keycodes.map["j"] then
+            hs.eventtap.keyStroke({}, "down")
+            return true
+        elseif keyCode == hs.keycodes.map["k"] then
+            hs.eventtap.keyStroke({}, "up")
+            return true
+        elseif keyCode == hs.keycodes.map["l"] then
+            hs.eventtap.keyStroke({}, "right")
+            return true
+        end
+    end
+
+    return false
+end)
+
+-- 启动按键监听器
+keyListener:start()
+
+```
+
+Hammerspoon 是一个开源的 macOS 自动化工具，它通过 Lua 编程语言提供强大的脚本能力，让用户能够自定义和自动化各种操作。以下是 Hammerspoon 的一些主要特点和功能：
+
+1. **Lua 脚本**：Hammerspoon 的核心是使用 Lua 脚本语言，用户可以编写脚本来控制和自动化几乎任何 macOS 功能。
+
+2. **模块化设计**：Hammerspoon 提供了大量模块（如窗口管理、剪贴板操作、Wi-Fi 状态检测等），用户可以利用这些模块来创建复杂的自动化脚本。
+
+3. **事件监听**：可以监听系统事件（如应用程序启动、网络状态变化、USB 设备连接等），并根据这些事件触发相应的脚本。
+
+4. **窗口管理**：提供强大的窗口管理功能，用户可以通过脚本调整窗口大小、位置，甚至创建复杂的窗口布局。
+
+5. **热键绑定**：允许用户定义自定义热键，以触发特定的脚本或动作。
+
+6. **集成能力**：Hammerspoon 可以与其他应用程序和服务集成，扩展其功能和应用范围。
+
+7. **社区支持**：作为开源项目，Hammerspoon 有一个活跃的社区，用户可以共享脚本、模块，并获得支持和帮助。
+
+Hammerspoon 适合那些对编程有一定了解，并希望深入定制 macOS 工作流程的用户。它的灵活性和扩展性使其成为高级用户和开发者的理想工具，用于创建个性化的自动化解决方案。
 
 ### Idea
 
