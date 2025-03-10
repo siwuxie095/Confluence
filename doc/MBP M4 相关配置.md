@@ -278,6 +278,10 @@ Keyboard Maestro 是许多 macOS 用户用来提高生产力的工具，尤其�
 
 Git：https://github.com/Hammerspoon/hammerspoon
 
+介绍：https://www.xiaojun.im/posts/2023-06-20-hammerspoon
+
+玩法：https://sspai.com/post/53992
+
 安装： 
 ```bash
     brew install --cask hammerspoon
