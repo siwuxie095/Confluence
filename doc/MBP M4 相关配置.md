@@ -287,6 +287,11 @@ Git：https://github.com/Hammerspoon/hammerspoon
     brew install --cask hammerspoon
 ```
 
+可设置开机自启。
+另需驱动权限（Enable Accessibility）。
+![Hammerspoon配置.png](../img/Hammerspoon%E9%85%8D%E7%BD%AE.png)
+
+
 配置(左shift+h/j/k/l为左/下/上/右)：
 
 ```lua
