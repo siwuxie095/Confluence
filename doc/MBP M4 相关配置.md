@@ -490,6 +490,7 @@ Plugin:
 - CodeGlance Pro
 - FindBugs-IDEA（废弃，搜索不到）
 - Free MyBatis plugin（暂时不装）
+- MyBatisX
 - GenerateAllSetter
 - GsonFormat（暂时不装）
 - JProfiler（暂时不装）
