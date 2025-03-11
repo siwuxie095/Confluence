@@ -476,6 +476,15 @@ Editor -> File and Code Templates:
  */
 ```
 
+或
+
+```java
+/**
+ * @author Username
+ * @date ${YEAR}-${MONTH}-${DAY}
+ */
+```
+
 
 
 #### idea 插件
