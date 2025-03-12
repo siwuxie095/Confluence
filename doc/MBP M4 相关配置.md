@@ -529,6 +529,48 @@ Plugin:
 - TONGYI Lingma（暂时不装）
 
 
+
+### VS Code
+
+官网：https://code.visualstudio.com/
+
+安装：
+```bash
+    brew install --cask visual-studio-code
+```
+
+
+### Sublime
+
+官网：https://www.sublimetext.com/
+
+安装：
+```bash
+    brew install --cask sublime-text
+```
+
+要关闭 Mac 上 Sublime Text 的自动更新功能，可以通过以下步骤实现：
+
+1. **打开 Sublime Text：**
+    - 启动 Sublime Text 应用程序。
+
+2. **打开用户设置：**
+    - 点击菜单栏中的“Preferences”。
+    - 选择“Settings”以打开用户设置文件。
+
+3. **修改设置：**
+    - 在打开的用户设置文件中，添加以下配置：
+      ```json
+      "update_check": false
+      ```
+    - 确保此设置是在 JSON 格式的花括号内，并且与其他设置用逗号分隔。
+
+4. **保存设置：**
+    - 保存文件（通常可以使用快捷键 `Command + S`）。
+
+通过这些步骤，Sublime Text 将不会再自动检查更新。请注意，这样做可能会导致您错过重要的安全更新或新功能，因此建议定期手动检查更新。
+
+
 ### 微信
 
 官网：https://mac.weixin.qq.com/?t=mac&lang=zh_CN
