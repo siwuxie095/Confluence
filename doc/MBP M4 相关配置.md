@@ -558,6 +558,17 @@ Plugin:
     brew install --cask yesplaymusic
 ```
 
+### Xmind
+
+官网：https://www.xmind.cn/
+
+使用免费版即可。
+
+安装：
+```bash
+    brew install --cask xmind
+```
+
 
 
 
