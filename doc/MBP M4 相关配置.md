@@ -398,7 +398,7 @@ Hammerspoon 适合那些对编程有一定了解，并希望深入定制 macOS �
 
 官网：https://www.jetbrains.com/zh-cn/idea/download/other.html
 
-（下载当前最新版：2024.3.4.1 CE）
+（下载当前最新版：2024.3.4.1 CE/2024.3.5 CE）
 
 #### 项目迁移
 idea maven项目迁移，从一台电脑复制到另一台电脑后，idea打开maven项目，显示都是 modified
