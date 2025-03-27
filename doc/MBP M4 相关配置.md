@@ -515,7 +515,7 @@ Plugin:
 - Lombok
 - MapStruct Support（暂时不装）
 - Maven Dependency Helper（暂时不装）
-- Maven Helper（暂时不装）
+- Maven Helper
 - MyBatis Log Plugin（暂时不装）
 - PlantUML integration（暂时不装）
 - PlantUML Syntax Check（暂时不装）
