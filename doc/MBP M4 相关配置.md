@@ -394,6 +394,17 @@ Hammerspoon 是一个开源的 macOS 自动化工具，它通过 Lua 编程语�
 
 Hammerspoon 适合那些对编程有一定了解，并希望深入定制 macOS 工作流程的用户。它的灵活性和扩展性使其成为高级用户和开发者的理想工具，用于创建个性化的自动化解决方案。
 
+
+### JDK
+
+JDK8 官网：https://www.oracle.com/java/technologies/downloads/#java8
+JDK21 官网：https://www.oracle.com/java/technologies/downloads/#java21
+
+Java8 开源：https://adoptium.net/zh-CN/temurin/releases/?os=mac&arch=any&version=8
+Java21 开源：https://adoptium.net/zh-CN/temurin/releases/?os=mac&arch=any&version=21
+
+
+
 ### Idea
 
 官网：https://www.jetbrains.com/zh-cn/idea/download/other.html
