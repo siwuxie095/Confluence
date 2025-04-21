@@ -630,7 +630,13 @@ Plugin:
     brew install --cask xmind
 ```
 
+### Clearview
 
+版本：Clearview for Mac v2.3.2
+
+破解：https://www.xxmac.com/clearview.html
+
+注意：不要安装 Clearview X
 
 
 
