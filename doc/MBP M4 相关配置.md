@@ -595,6 +595,8 @@ Plugin:
 
 官网：https://www.feishu.cn/download
 
+在 **通用** 中，选择主题模式为：跟随系统。
+
 ### 有道云笔记
 
 官网：https://note.youdao.com/note-download/
