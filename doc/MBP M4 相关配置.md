@@ -403,6 +403,8 @@ JDK21 官网：https://www.oracle.com/java/technologies/downloads/#java21
 Java8 开源：https://adoptium.net/zh-CN/temurin/releases/?os=mac&arch=any&version=8
 Java21 开源：https://adoptium.net/zh-CN/temurin/releases/?os=mac&arch=any&version=21
 
+Java8 开源：https://www.azul.com/downloads/?version=java-8-lts&os=macos&architecture=arm-64-bit#zulu
+Java 开源：https://www.azul.com/downloads/?version=java-21-lts&os=macos&architecture=arm-64-bit#zulu
 
 
 ### Idea
