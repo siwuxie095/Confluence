@@ -640,6 +640,15 @@ Plugin:
 
 注意：不要安装 Clearview X
 
+### Neat Reader
+
+官网：https://www.neat-reader.com/
+
+参考：https://www.52pojie.cn/forum.php?mod=viewthread&tid=1715250&highlight=neat%2Breader
+
+下载链接：https://neat-reader-app-release.oss-cn-beijing.aliyuncs.com/NeatReader-8.1.4.dmg
+补丁链接：https://priapus.lanzouy.com/i6hsS0g8vufg
+
 
 
 
