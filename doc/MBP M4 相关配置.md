@@ -470,7 +470,7 @@ idea maven项目迁移，从一台电脑复制到另一台电脑后，idea打开
 
 Appearance & Behavior -> Appearance:
 
-可设置 IDE 的主题和字体。主题（同时设置外观和编辑区）一般使用 Darcula，字体可根据屏幕大小进行调节。
+可设置 IDE 的主题和字体。主题（同时设置外观和编辑区）一般使用 Darcula 或 Darcula Colorful，字体可根据屏幕大小进行调节。
 
 （1）可以选择从外部导入 Dracula 主题（https://draculatheme.com/jetbrains 或 https://github.com/dracula/jetbrains/releases）。
 （2）也可以选择在 Plugin Marketplace 插件市场进行下载安装。
