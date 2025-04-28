@@ -540,6 +540,14 @@ Plugin:
 - TONGYI Lingma（暂时不装）
 
 
+#### 破解版本
+
+下载：2024.3.5 UE
+参考：https://zhuanlan.zhihu.com/p/9228878783
+额外参考：https://lupf.cn/articles/2024/12/23/1734958232731.html
+激活工具：https://ziby0nwxdov.feishu.cn/docx/W5w9dya9LoDlNDxo6Y2cUXZOnlh
+激活码：https://ziby0nwxdov.feishu.cn/docx/W5w9dya9LoDlNDxo6Y2cUXZOnlh
+
 
 ### VS Code
 
