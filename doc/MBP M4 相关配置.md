@@ -413,6 +413,11 @@ Java 开源：https://www.azul.com/downloads/?version=java-21-lts&os=macos&archi
 
 （下载当前最新版：2024.3.4.1 CE/2024.3.5 CE）
 
+
+#### 关闭自动更新检查
+
+注意关闭 Check IDE updates for Stable Releases/Early Access Program
+
 #### 项目迁移
 idea maven项目迁移，从一台电脑复制到另一台电脑后，idea打开maven项目，显示都是 modified
  的文件，通过如下三个 git 命令可以解决（依次执行）：
