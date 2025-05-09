@@ -560,6 +560,27 @@ X9MQ8ML8U7-eyJsaWNlbnNlSWQiOiJYOU1ROE1MOFU3IiwibGljZW5zZWVOYW1lIjoiY29tbXVuaXR5L
 ```
 
 
+### Tomcat
+
+官网：https://tomcat.apache.org/
+
+注意：因为试用的 SpringBoot3，所以需要 tomcat 10
+
+安装：
+```bash
+    brew install tomcat@10
+```
+
+安装完后，使用命令：
+
+```bash
+    brew ls tomcat@10
+```
+
+找到 tomcat 安装目录（/opt/homebrew/Cellar/tomcat@10/10.1.39/libexec/），复制到 idea 进行配置即可
+
+
+
 ### VS Code
 
 官网：https://code.visualstudio.com/
