@@ -418,6 +418,9 @@ Java 开源：https://www.azul.com/downloads/?version=java-21-lts&os=macos&archi
 
 注意关闭 Check IDE updates for Stable Releases/Early Access Program
 
+#### 关闭Git Commit前的代码分析
+在 Preferences -> Version Control -> Commit 中，取消勾选 Analyze code 和 Check TODO。
+
 #### 项目迁移
 idea maven项目迁移，从一台电脑复制到另一台电脑后，idea打开maven项目，显示都是 modified
  的文件，通过如下三个 git 命令可以解决（依次执行）：
