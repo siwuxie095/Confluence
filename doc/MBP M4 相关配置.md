@@ -427,7 +427,7 @@ PS：这个操作太慢，导致idea会卡死，无法提交代码，所以要�
 
 #### 加快 scanning file to index 
 
-在 Help 的 Change Memory Settings 中，将 Maximum Heap Size 设置为 2048 MB（默认为 1024 MB）。
+如果项目过大，可能在做 index 的时候会比较卡，可以在 Help 的 Change Memory Settings 中，将 Maximum Heap Size 设置为 2048 MB（默认为 1024 MB）。
 
 或者
 
