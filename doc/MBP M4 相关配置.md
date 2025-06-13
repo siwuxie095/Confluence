@@ -419,7 +419,23 @@ Java 开源：https://www.azul.com/downloads/?version=java-21-lts&os=macos&archi
 注意关闭 Check IDE updates for Stable Releases/Early Access Program
 
 #### 关闭Git Commit前的代码分析
+
+
 在 Preferences -> Version Control -> Commit 中，取消勾选 Analyze code 和 Check TODO。
+
+PS：这个操作太慢，导致idea会卡死，无法提交代码，所以要取消勾选。
+
+#### 加快 scanning file to index 
+
+在 Help 的 Change Memory Settings 中，将 Maximum Heap Size 设置为 2048 MB（默认为 1024 MB）。
+
+或者
+
+在 Help 的 Edit Custom VM Options 中，添加（或修改）如下配置：
+
+```text
+    -Xmx2048m
+```
 
 #### 项目迁移
 idea maven项目迁移，从一台电脑复制到另一台电脑后，idea打开maven项目，显示都是 modified
