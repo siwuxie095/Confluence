@@ -579,6 +579,41 @@ X9MQ8ML8U7-eyJsaWNlbnNlSWQiOiJYOU1ROE1MOFU3IiwibGljZW5zZWVOYW1lIjoiY29tbXVuaXR5L
 ```
 
 
+#### Java21单元测试配置
+
+JDK 升级到 21 之后，运行单元测试会报错，可通过增加 vm options 来解决。 在 Run/Debug Configurations 中，找到单元测试的配置项，添加如下 VM options：
+
+```text
+
+-Djdk.attach.allowAttachSelf=true
+-XX:+EnableDynamicAgentLoading
+--add-opens
+java.management/sun.management=ALL-UNNAMED
+--add-opens
+java.base/java.lang=ALL-UNNAMED
+--add-opens
+java.base/java.lang.reflect=ALL-UNNAMED
+--add-opens
+java.base/sun.reflect.annotation=ALL-UNNAMED
+--add-opens
+java.base/java.math=ALL-UNNAMED
+--add-opens
+java.base/java.util=ALL-UNNAMED
+--add-opens
+java.base/sun.util.calendar=ALL-UNNAMED
+--add-opens
+java.base/java.io=ALL-UNNAMED
+--add-opens
+java.base/java.net=ALL-UNNAMED
+--add-opens
+java.xml/com.sun.org.apache.xerces.internal.jaxp.datatype=ALL-UNNAMED
+
+```
+
+
+
+
+
 ### Tomcat
 
 官网：https://tomcat.apache.org/
