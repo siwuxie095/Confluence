@@ -520,6 +520,22 @@ mvn --version
 ```
 
 
+如果是自己下载的 idea，可以这样配置：
+
+```bash
+# 添加到shell配置文件
+echo 'export MAVEN_HOME="/Users/jj.li/Software/apache-maven-3.8.5"' >> ~/.zshrc
+echo 'export PATH="$MAVEN_HOME/bin:$PATH"' >> ~/.zshrc
+
+# 重新加载配置
+source ~/.zshrc
+```
+
+配置完成后，可以验证Maven是否可用：
+```bash
+mvn -v
+```
+
 
 
 
