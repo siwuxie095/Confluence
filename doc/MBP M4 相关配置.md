@@ -438,6 +438,7 @@ PS：这个操作太慢，导致idea会卡死，无法提交代码，所以要�
 ```
 
 #### 项目迁移
+
 idea maven项目迁移，从一台电脑复制到另一台电脑后，idea打开maven项目，显示都是 modified
  的文件，通过如下三个 git 命令可以解决（依次执行）：
 
@@ -485,6 +486,38 @@ idea maven项目迁移，从一台电脑复制到另一台电脑后，idea打开
 
 6. 重新启动 IntelliJ IDEA，验证补丁是否生效。
 
+
+#### 配置Maven环境变量
+
+使用IDEA内置的Maven：
+打开IntelliJ IDEA
+进入 Preferences → Build, Execution, Deployment → Build Tools → Maven
+查看 Maven home directory，通常在：
+```text
+/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3
+```
+
+步骤1：检查IDEA的Maven安装位置
+
+```bash
+ls "/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/bin/mvn"
+```
+步骤2：添加到PATH环境变量
+
+```bash
+# 添加到shell配置文件
+echo 'export MAVEN_HOME="/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3"' >> ~/.zshrc
+echo 'export PATH="$MAVEN_HOME/bin:$PATH"' >> ~/.zshrc
+
+# 重新加载配置
+source ~/.zshrc
+```
+
+步骤3：验证Maven安装
+配置完成后，可以验证Maven是否可用：
+```bash
+mvn --version
+```
 
 
 
