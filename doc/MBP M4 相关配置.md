@@ -724,6 +724,14 @@ java.xml/com.sun.org.apache.xerces.internal.jaxp.datatype=ALL-UNNAMED
 
 通过这些步骤，Sublime Text 将不会再自动检查更新。请注意，这样做可能会导致您错过重要的安全更新或新功能，因此建议定期手动检查更新。
 
+### Postman
+
+官网：https://www.postman.com/
+
+安装：
+```bash
+    brew install --cask postman
+```
 
 ### 微信
 
