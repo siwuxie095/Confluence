@@ -693,6 +693,15 @@ java.xml/com.sun.org.apache.xerces.internal.jaxp.datatype=ALL-UNNAMED
     brew install --cask visual-studio-code
 ```
 
+### Cursor
+
+官网：https://cursor.com/
+
+安装：
+```bash
+    brew install --cask cursor
+```
+
 
 ### Sublime
 
