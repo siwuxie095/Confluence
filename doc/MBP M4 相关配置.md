@@ -708,6 +708,11 @@ java.xml/com.sun.org.apache.xerces.internal.jaxp.datatype=ALL-UNNAMED
 
 #### 插件
 
+参考：
+https://github.com/viatsko/awesome-vscode
+https://viatsko.github.io/awesome-vscode/
+
+
 - Dracula Theme
 - Project Manager
 - GitLens — Git supercharged
@@ -734,6 +739,7 @@ java.xml/com.sun.org.apache.xerces.internal.jaxp.datatype=ALL-UNNAMED
 - Error Lens
 - Path Intellisense
 - CodeSnap
+- markdownlint
 
 - Live Server
 - Import Cost
