@@ -702,6 +702,50 @@ java.xml/com.sun.org.apache.xerces.internal.jaxp.datatype=ALL-UNNAMED
     brew install --cask cursor
 ```
 
+#### 配置调整
+
+- 字体大小从 12 调到 15
+
+#### 插件
+
+- Dracula Theme
+- Project Manager
+- GitLens — Git supercharged
+- Git History
+- Git Graph
+- GitHub Pull Requests
+- Prettier - Code formatter
+- Bracket Pair Colorizer
+- Auto Rename Tag
+- Auto Close Tag
+- Peacock
+- colorize
+- Code Spell Checker
+- Debugger for Chrome
+- Icon Fonts
+- Todo Tree
+- vscode-icons
+- Material Icon Theme
+- Bookmarks
+
+- Better Comments
+- Settings Sync
+- Remote - SSH
+- Error Lens
+- Path Intellisense
+- CodeSnap
+
+- Live Server
+- Import Cost
+- Quokka.js
+- Turbo Console Log
+- Console Ninja
+- ESLint
+
+- Extension Pack for Java
+- Python
+- Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code
+
 
 ### Sublime
 
