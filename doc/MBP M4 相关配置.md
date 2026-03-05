@@ -706,6 +706,10 @@ java.xml/com.sun.org.apache.xerces.internal.jaxp.datatype=ALL-UNNAMED
 
 - 字体大小从 12 调到 15
 
+参考：
+https://fastzhong.com/posts/vscode-settings/#%E4%B8%BB%E9%A2%98%E9%A2%9C%E8%89%B2
+https://www.xheldon.com/life/make-vscode-great-forever
+
 #### 插件
 
 参考：
@@ -716,21 +720,21 @@ https://viatsko.github.io/awesome-vscode/
 - Dracula Theme
 - Project Manager
 - GitLens — Git supercharged
-- Git History
-- Git Graph
+- Git History（暂不安装，用 GitLens 即可）
+- Git Graph（暂不安装，用 GitLens 即可）
 - GitHub Pull Requests
 - Prettier - Code formatter
-- Bracket Pair Colorizer
-- Auto Rename Tag
+- Bracket Pair Colorizer（暂不安装，vs code 已内置该功能）
+- Auto Rename Tag（暂不安装，vs code 已内置该功能）
 - Auto Close Tag
 - Peacock
 - colorize
 - Code Spell Checker
-- Debugger for Chrome
+- Debugger for Chrome（暂不安装，vs code 已内置该功能）
 - Icon Fonts
 - Todo Tree
-- vscode-icons
 - Material Icon Theme
+- vscode-icons（暂不安装，用 Material Icon Theme 即可）
 - Bookmarks
 
 - Better Comments
@@ -740,6 +744,11 @@ https://viatsko.github.io/awesome-vscode/
 - Path Intellisense
 - CodeSnap
 - markdownlint
+- REST Client
+- Indent Rainbow
+- Partial Diff
+- Code Runner
+- SonarLint
 
 - Live Server
 - Import Cost
