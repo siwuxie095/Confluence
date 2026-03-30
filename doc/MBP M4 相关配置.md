@@ -762,6 +762,123 @@ https://viatsko.github.io/awesome-vscode/
 - Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code
 
 
+### Claude Code
+
+官网：https://claude.ai/code
+
+安装：
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+#### Statusline
+
+Claude Code 底部状态栏支持三种配置方案，可随时切换，只需修改 `~/.claude/settings.json` 中的 `command` 字段。
+
+##### 方案一：原生 Dracula 脚本
+
+Dracula 配色，显示模型名、目录、git 分支、上下文用量进度条、费用。
+
+**1. 创建脚本 `~/.claude/statusline-dracula.sh`：**
+
+```bash
+#!/bin/bash
+input=$(cat)
+
+# Dracula color palette (256-color)
+PURPLE='\033[38;5;141m'   # #BD93F9
+CYAN='\033[38;5;117m'     # #8BE9FD
+GREEN='\033[38;5;84m'     # #50FA7B
+ORANGE='\033[38;5;215m'   # #FFB86C
+RED='\033[38;5;203m'      # #FF5555
+YELLOW='\033[38;5;228m'   # #F1FA8C
+FG='\033[38;5;255m'       # #F8F8F2
+RESET='\033[0m'
+
+MODEL=$(echo "$input" | jq -r '.model.display_name')
+DIR=$(echo "$input" | jq -r '.workspace.current_dir')
+PCT=$(echo "$input" | jq -r '.context_window.used_percentage // 0' | cut -d. -f1)
+COST=$(echo "$input" | jq -r '.cost.total_cost_usd // 0')
+
+if [ "$PCT" -ge 90 ]; then BAR_COLOR="$RED"
+elif [ "$PCT" -ge 70 ]; then BAR_COLOR="$ORANGE"
+else BAR_COLOR="$GREEN"; fi
+
+FILLED=$((PCT * 10 / 100)); EMPTY=$((10 - FILLED))
+BAR=""
+[ "$FILLED" -gt 0 ] && printf -v FILL "%${FILLED}s" && BAR="${FILL// /█}"
+[ "$EMPTY" -gt 0 ] && printf -v PAD "%${EMPTY}s" && BAR="${BAR}${PAD// /░}"
+
+BRANCH=""
+if git -C "$DIR" rev-parse --git-dir > /dev/null 2>&1; then
+    BRANCH_NAME=$(git -C "$DIR" branch --show-current 2>/dev/null)
+    [ -n "$BRANCH_NAME" ] && BRANCH=" ${FG}|${RESET} ${GREEN}🌿 ${BRANCH_NAME}${RESET}"
+fi
+
+COST_FMT=$(printf '$%.4f' "$COST")
+printf "%b" "${PURPLE}[${MODEL}]${RESET} ${CYAN}${DIR##*/}${RESET}${BRANCH} ${FG}|${RESET} ${BAR_COLOR}${BAR}${RESET} ${PCT}% ${FG}|${RESET} ${YELLOW}${COST_FMT}${RESET}\n"
+```
+
+**2. 添加执行权限：**
+
+```bash
+chmod +x ~/.claude/statusline-dracula.sh
+```
+
+效果：`[Sonnet] Confluence | 🌿 master | ███░░░░░░░ 35% | $0.0012`
+
+##### 方案二：ccstatusline
+
+GitHub：https://github.com/sirmalloc/ccstatusline
+
+交互式 TUI 配置，支持 Powerline 箭头、可视化预览，无需手写脚本：
+
+```bash
+npx -y ccstatusline@latest
+```
+
+运行后按界面提示配置，完成后自动写入 `settings.json`。
+
+##### 方案三：x-cmd
+
+官网：https://x-cmd.com
+
+支持 70+ 种预设主题，一行命令安装并切换。
+
+**1. 安装 x-cmd（需在 iTerm2 交互式终端中执行）：**
+
+```bash
+eval "$(curl -fsSL https://get.x-cmd.com)"
+```
+
+安装完成后自动写入 `~/.zshrc`，重启 iTerm2 生效。
+
+**2. 设置 Dracula 主题：**
+
+```bash
+x claude stl setup --theme dracula
+```
+
+自动更新 `settings.json`，command 为：`x-cmd theme statusline preview dracula`
+
+**3. 查看所有可用主题：**
+
+```bash
+x claude stl setup --theme <Tab>   # Tab 键补全查看全部主题
+```
+
+##### 切换方式
+
+修改 `~/.claude/settings.json` 中的 `command` 即可：
+
+| 方案 | command |
+|------|---------|
+| 方案一（原生 Dracula） | `~/.claude/statusline-dracula.sh` |
+| 方案二（ccstatusline） | ccstatusline 自动生成的脚本路径 |
+| 方案三（x-cmd） | `x-cmd theme statusline preview dracula` |
+
+
+
 ### iTerm2
 
 官网：https://iterm2.com/
