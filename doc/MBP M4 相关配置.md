@@ -912,6 +912,138 @@ GitHub：https://github.com/obra/superpowers
 
 
 
+### Ghostty
+
+官网：https://ghostty.org
+
+HashiCorp 联合创始人 Mitchell Hashimoto 用 Zig 开发的新一代终端，GPU 加速（macOS 基于 Metal），内置分屏，性能明显优于 iTerm2。Claude Code 官方文档支持列表中包含 Ghostty。
+
+安装：
+```bash
+brew install --cask ghostty
+```
+
+#### 配置
+
+配置文件路径：`~/.config/ghostty/config`
+
+```bash
+mkdir -p ~/.config/ghostty
+```
+
+推荐配置（复用已安装的 MesloLGS NF 字体）：
+
+```
+# === 字体 ===
+font-family = MesloLGS NF
+font-size = 14
+font-thicken = true
+adjust-cell-height = 2
+
+# === 主题 ===
+# Dracula 主题（需先安装，见下方）
+theme = dracula
+
+# === 窗口 ===
+background-opacity = 0.9
+background-blur-radius = 20
+macos-titlebar-style = transparent
+window-padding-x = 10
+window-padding-y = 8
+window-save-state = always
+window-theme = auto
+
+# === 光标 ===
+cursor-style = bar
+cursor-style-blink = true
+cursor-opacity = 0.8
+
+# === 鼠标 ===
+mouse-hide-while-typing = true
+copy-on-select = clipboard
+
+# === 下拉终端 ===
+quick-terminal-position = top
+quick-terminal-screen = mouse
+quick-terminal-autohide = true
+quick-terminal-animation-duration = 0.15
+
+# === 安全 ===
+clipboard-paste-protection = true
+clipboard-paste-bracketed-safe = true
+
+# === Shell 集成 ===
+shell-integration = detect
+
+# === macOS 特定 ===
+macos-option-as-alt = true      # Option+←/→ 跳词，同 iTerm2 的 Esc+ 设置
+confirm-close-surface = false   # 关闭分屏不弹确认框
+auto-update = off               # 关闭自动更新
+
+# === 交互体验 ===
+focus-follows-mouse = true      # 鼠标悬停自动切换分屏焦点
+resize-overlay = always         # 调整分屏大小时显示尺寸提示
+
+# === 快捷键 ===
+keybind = cmd+t=new_tab
+keybind = cmd+shift+left=previous_tab
+keybind = cmd+shift+right=next_tab
+keybind = cmd+w=close_surface
+keybind = cmd+d=new_split:right
+keybind = cmd+shift+d=new_split:down
+keybind = cmd+alt+left=goto_split:left
+keybind = cmd+alt+right=goto_split:right
+keybind = cmd+alt+up=goto_split:top
+keybind = cmd+alt+down=goto_split:bottom
+keybind = cmd+shift+e=equalize_splits
+keybind = cmd+shift+f=toggle_split_zoom
+keybind = cmd+plus=increase_font_size:1
+keybind = cmd+minus=decrease_font_size:1
+keybind = cmd+zero=reset_font_size
+keybind = global:ctrl+grave_accent=toggle_quick_terminal
+keybind = cmd+shift+comma=reload_config
+
+# === 性能 ===
+scrollback-limit = 25000000
+```
+
+修改配置后按 `Cmd+Shift+,` 重载，无需重启。
+
+#### 核心快捷键
+
+| 快捷键 | 功能 |
+|--------|------|
+| `Cmd+D` | 左右分屏 |
+| `Cmd+Shift+D` | 上下分屏 |
+| `Cmd+Shift+F` | 放大/还原当前分屏 |
+| `Cmd+Alt+←/→/↑/↓` | 切换分屏 |
+| `Cmd+W` | 关闭当前分屏 |
+| `Ctrl+\`` | 全局下拉终端 |
+| `Cmd+Shift+,` | 重载配置 |
+
+#### Dracula 主题
+
+主题页面：https://draculatheme.com/ghostty
+
+```bash
+git clone https://github.com/dracula/ghostty.git ~/dracula-ghostty
+mkdir -p ~/.config/ghostty/themes
+cp -r ~/dracula-ghostty/dracula ~/.config/ghostty/themes/
+```
+
+在配置文件中设置：
+```
+theme = dracula
+```
+
+按 `Cmd+Shift+,` 重载生效。
+
+#### 查看内置主题
+
+```bash
+ghostty +list-themes
+```
+
 ### iTerm2
 
 官网：https://iterm2.com/
