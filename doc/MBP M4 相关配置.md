@@ -762,6 +762,82 @@ https://viatsko.github.io/awesome-vscode/
 - Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code
 
 
+### iTerm2
+
+官网：https://iterm2.com/
+
+安装：
+```bash
+    brew install --cask iterm2
+```
+
+#### Dracula 主题
+
+主题页面：https://draculatheme.com/iterm
+
+安装：
+```bash
+git clone https://github.com/dracula/iterm.git ~/dracula-iterm
+```
+
+激活步骤：
+1. 打开 iTerm2，进入 `Preferences` -> `Profiles` -> `Colors`
+2. 右下角点击 `Color Presets...` -> `Import...`
+3. 选择 `~/dracula-iterm/Dracula.itermcolors`
+4. 再次点击 `Color Presets...`，选择 `Dracula` 即可
+
+#### Oh My Zsh
+
+iTerm2 无需额外配置即可与 Oh My Zsh 联动——iTerm2 打开时会自动执行 `~/.zshrc`，Oh My Zsh 通过其中两行配置生效：
+
+```bash
+export ZSH="$HOME/.oh-my-zsh"   # 指定 Oh My Zsh 路径
+source $ZSH/oh-my-zsh.sh        # 加载 Oh My Zsh
+```
+
+检查是否已安装：
+```bash
+ls ~/.oh-my-zsh
+```
+
+若未安装，执行：
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+安装完成后，上述两行会自动写入 `~/.zshrc`，重新打开 iTerm2 即生效。
+
+#### Dracula zsh 主题
+
+主题页面：https://draculatheme.com/zsh
+
+这是 zsh 的提示符主题，与 iTerm2 的 Dracula 颜色方案叠加使用效果更好：
+- **iTerm2 Dracula**：控制终端窗口配色（背景、文字颜色等）
+- **zsh Dracula**：控制命令行提示符的样式
+
+安装步骤：
+
+1. clone 主题仓库：
+```bash
+git clone https://github.com/dracula/zsh.git ~/dracula-zsh
+```
+
+2. 创建软链接到 Oh My Zsh 的 themes 目录：
+```bash
+ln -s ~/dracula-zsh/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
+ln -s ~/dracula-zsh/lib ~/.oh-my-zsh/themes/lib
+```
+
+3. 在 `~/.zshrc` 中设置主题：
+```bash
+ZSH_THEME="dracula"
+```
+
+4. 重新加载配置：
+```bash
+source ~/.zshrc
+```
+
 ### Sublime
 
 官网：https://www.sublimetext.com/
