@@ -771,6 +771,40 @@ https://viatsko.github.io/awesome-vscode/
     brew install --cask iterm2
 ```
 
+#### 实用配置
+
+以下配置通过修改 plist 完成，**重启 iTerm2 后生效**：
+
+```bash
+# 无限滚动历史（不丢失历史输出）
+/usr/libexec/PlistBuddy -c "Set :'New Bookmarks':0:'Unlimited Scrollback' true" ~/Library/Preferences/com.googlecode.iterm2.plist
+
+# Option 键跳词（Option+←/→ 按单词跳转）
+/usr/libexec/PlistBuddy -c "Set :'New Bookmarks':0:'Option Key Sends' 2" ~/Library/Preferences/com.googlecode.iterm2.plist
+/usr/libexec/PlistBuddy -c "Set :'New Bookmarks':0:'Right Option Key Sends' 2" ~/Library/Preferences/com.googlecode.iterm2.plist
+
+# 字体设置为 MesloLGS NF（需先安装字体，见下方）
+/usr/libexec/PlistBuddy -c "Set :'New Bookmarks':0:'Normal Font' 'MesloLGSNF-Regular 13'" ~/Library/Preferences/com.googlecode.iterm2.plist
+```
+
+#### Nerd Font 字体
+
+安装 MesloLGS NF，配合 zsh Dracula 主题正确显示图标：
+
+```bash
+brew install --cask font-meslo-lg-nerd-font
+```
+
+PostScript 字体名：`MesloLGSNF-Regular`，已通过上方 plist 命令写入配置。
+
+#### 热键窗口
+
+全局快捷键随时唤出 iTerm2，需手动设置（3步）：
+
+1. `Preferences` -> `Keys` -> `Hotkey`
+2. 勾选 `Show/hide all windows with a system-wide hotkey`
+3. 点击输入框，按下目标快捷键（推荐 `Option+Space`）
+
 #### Dracula 主题
 
 主题页面：https://draculatheme.com/iterm
