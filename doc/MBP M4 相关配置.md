@@ -877,6 +877,39 @@ x claude stl setup --theme <Tab>   # Tab 键补全查看全部主题
 | 方案二（ccstatusline） | ccstatusline 自动生成的脚本路径 |
 | 方案三（x-cmd） | `x-cmd theme statusline preview dracula` |
 
+#### Superpowers 插件
+
+GitHub：https://github.com/obra/superpowers
+
+第三方开源插件，为 Claude Code 提供结构化工作流技能，让 Claude 从"被动执行"转变为"主动规划"。
+
+安装：
+```
+/plugin marketplace add claude-plugins-official
+/plugin install superpowers@claude-plugins-official
+```
+
+安装后 `~/.claude/settings.json` 中会自动添加：
+```json
+"enabledPlugins": {
+  "superpowers@claude-plugins-official": true
+}
+```
+
+主要技能（在对话中直接使用）：
+
+| 技能 | 用途 |
+|------|------|
+| `superpowers:writing-plans` | 生成详细实现计划 |
+| `superpowers:executing-plans` | 按计划分步执行开发任务 |
+| `superpowers:brainstorming` | 头脑风暴解决方案 |
+| `superpowers:systematic-debugging` | 系统化排查 bug |
+| `superpowers:test-driven-development` | TDD 流程 |
+| `superpowers:requesting-code-review` | 发起代码审查 |
+| `superpowers:receiving-code-review` | 处理审查反馈 |
+| `superpowers:dispatching-parallel-agents` | 并行子任务调度 |
+| `superpowers:finishing-a-development-branch` | 完成开发分支收尾 |
+
 
 
 ### iTerm2
