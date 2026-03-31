@@ -1152,12 +1152,25 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
   ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
-在 `~/.zshrc` 中启用插件：
+3. 目录快速跳转（`j 关键词` 跳到访问过的目录，无需完整路径）：
 ```bash
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+brew install autojump
 ```
 
-执行 `source ~/.zshrc` 生效。
+在 `~/.zshrc` 中启用插件，并加载 autojump：
+```bash
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+```
+
+autojump 用法：
+```bash
+j idea      # 跳到包含 idea 的目录
+j conf      # 跳到 Confluence 项目目录
+```
+
+> 需先用 `cd` 正常访问过目录，autojump 才会记录并识别。
 
 #### Dracula zsh 主题
 
