@@ -1123,6 +1123,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 安装完成后，上述两行会自动写入 `~/.zshrc`，重新打开 iTerm2 即生效。
 
+**关闭自动更新提示**（推荐，避免 shell 启动时弹出更新询问）：
+
+在 `~/.zshrc` 中取消注释或添加：
+```bash
+zstyle ':omz:update' mode disabled
+```
+
 #### Dracula zsh 主题
 
 主题页面：https://draculatheme.com/zsh
@@ -1153,6 +1160,76 @@ ZSH_THEME="dracula"
 ```bash
 source ~/.zshrc
 ```
+
+#### Powerlevel10k（zsh 提示符主题，可替代 Dracula zsh 主题）
+
+GitHub：https://github.com/romkatv/powerlevel10k
+
+功能比 Dracula zsh 主题更强大，支持 Powerline 图标、git 状态、执行时间、错误码等丰富信息，且有向导式配置。与终端级 Dracula 颜色方案（iTerm2/Ghostty）完全兼容。
+
+安装：
+```bash
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git \
+  ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+
+在 `~/.zshrc` 中替换主题：
+```bash
+ZSH_THEME="powerlevel10k/powerlevel10k"
+```
+
+重启终端后配置向导自动启动，按提示选择风格即可（字体选 Yes，已安装 MesloLGS NF）。配置完成后生成 `~/.p10k.zsh`。
+
+**推荐向导选项**：
+
+| 向导步骤 | 推荐选择 | 说明 |
+|----------|----------|------|
+| Does this look like a diamond? | Yes | 确认 Nerd Font 字符渲染正常 |
+| Prompt Style | (3) Rainbow | 色彩丰富，信息清晰 |
+| Character Set | Unicode | 支持更多图标 |
+| Prompt Color | (3) Dark | 配合 Dracula 深色主题 |
+| Show current time | (2) 24-hour format | 显示 24 小时时钟 |
+| Prompt Separators | (1) Angled | 经典 Powerline 尖角风格 |
+| Prompt Heads | (1) Sharp | 尖角箭头头部 |
+| Prompt Tails | (1) Flat | 平尾 |
+| Prompt Height | (2) Two lines | 分两行显示，信息不拥挤 |
+| Prompt Connection | (3) Dotted | 上下行之间用点线连接 |
+| Prompt Frame | (4) Full | 完整边框，视觉清晰 |
+| Connection & Frame Color | (1) Lightest | 最浅色 |
+| Prompt Spacing | (2) Sparse | 命令之间留空行，易读 |
+| Icons | (2) Many icons | 显示尽可能多的图标 |
+| Prompt Flow | (2) Fluent | 流畅风格 |
+| Enable Transient Prompt | Yes | 历史命令折叠为单行，保持整洁 |
+| Instant Prompt | (1) Verbose | 快速启动，显示警告（推荐） |
+
+**关键配置说明**（生成于 `~/.p10k.zsh`）：
+
+```bash
+typeset -g POWERLEVEL9K_MODE=nerdfont-v3       # 使用 Nerd Font v3 图标
+typeset -g POWERLEVEL9K_PROMPT_CHAR_TRANSIENT_OK_VIINS_CONTENT_EXPANSION='❯'
+typeset -g POWERLEVEL9K_TRANSIENT_PROMPT=always # 历史命令折叠
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=verbose  # 快速启动，显示警告
+```
+
+**启用 Java 版本显示**：编辑 `~/.p10k.zsh`，在 `POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS` 中取消 `java_version` 的注释：
+
+```bash
+# 找到并取消注释这一行（约在 right prompt elements 区域）
+java_version            # java version
+```
+
+**Python 版本显示**：`pyenv` 和 `virtualenv` 段默认已启用，安装 pyenv 后自动显示当前版本，无需额外配置：
+
+```bash
+brew install pyenv
+```
+
+修改后重载生效：
+```bash
+source ~/.p10k.zsh
+```
+
+切回 Dracula zsh 主题：将 `ZSH_THEME` 改回 `"dracula"` 即可。
 
 ### Sublime
 
