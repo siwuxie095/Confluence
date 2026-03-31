@@ -1066,8 +1066,9 @@ ghostty +list-themes
 以下配置通过修改 plist 完成，**重启 iTerm2 后生效**：
 
 ```bash
-# 无限滚动历史（不丢失历史输出）
-/usr/libexec/PlistBuddy -c "Set :'New Bookmarks':0:'Unlimited Scrollback' true" ~/Library/Preferences/com.googlecode.iterm2.plist
+# 滚动历史上限 10000 行（无限滚动会导致内存占用过大甚至卡死，不推荐开启）
+/usr/libexec/PlistBuddy -c "Set :'New Bookmarks':0:'Unlimited Scrollback' false" ~/Library/Preferences/com.googlecode.iterm2.plist
+/usr/libexec/PlistBuddy -c "Set :'New Bookmarks':0:'Scrollback Lines' 10000" ~/Library/Preferences/com.googlecode.iterm2.plist
 
 # Option 键跳词（Option+←/→ 按单词跳转）
 /usr/libexec/PlistBuddy -c "Set :'New Bookmarks':0:'Option Key Sends' 2" ~/Library/Preferences/com.googlecode.iterm2.plist
