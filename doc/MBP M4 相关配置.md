@@ -1053,6 +1053,14 @@ ghostty +list-themes
     brew install --cask iterm2
 ```
 
+#### 透明度与模糊
+
+`Preferences → Profiles → Window`：
+
+- **Transparency**：调至 15–25%（轻微透明，不影响阅读）
+- **Blur**：勾选并调高（配合透明度产生毛玻璃效果）
+- 快捷键：`Cmd+U` 快速切换透明/不透明状态
+
 #### 实用配置
 
 以下配置通过修改 plist 完成，**重启 iTerm2 后生效**：
@@ -1130,6 +1138,27 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 zstyle ':omz:update' mode disabled
 ```
 
+**推荐插件**：
+
+1. 命令自动补全（根据历史记录灰色提示，按 → 或 End 键采纳）：
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions \
+  ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+2. 语法高亮（命令合法显示绿色，错误显示红色）：
+```bash
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
+  ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+在 `~/.zshrc` 中启用插件：
+```bash
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+```
+
+执行 `source ~/.zshrc` 生效。
+
 #### Dracula zsh 主题
 
 主题页面：https://draculatheme.com/zsh
@@ -1206,22 +1235,39 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 ```bash
 typeset -g POWERLEVEL9K_MODE=nerdfont-v3       # 使用 Nerd Font v3 图标
-typeset -g POWERLEVEL9K_PROMPT_CHAR_TRANSIENT_OK_VIINS_CONTENT_EXPANSION='❯'
 typeset -g POWERLEVEL9K_TRANSIENT_PROMPT=always # 历史命令折叠
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=verbose  # 快速启动，显示警告
 ```
 
-**启用 Java 版本显示**：编辑 `~/.p10k.zsh`，在 `POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS` 中取消 `java_version` 的注释：
+**手动微调 `~/.p10k.zsh`**（向导完成后执行，达到最优效果）：
 
+左侧提示符只保留核心段（去掉 `os_icon`，加入 `status` 和 `prompt_char`）：
 ```bash
-# 找到并取消注释这一行（约在 right prompt elements 区域）
-java_version            # java version
+typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+  dir              # 当前目录
+  vcs              # git 状态
+  status           # 命令退出码
+  newline
+  prompt_char      # 提示符 ❯
+)
 ```
 
-**Python 版本显示**：`pyenv` 和 `virtualenv` 段默认已启用，安装 pyenv 后自动显示当前版本，无需额外配置：
-
+右侧只保留有用信息（删除 ruby/k8s/aws/azure 等几十个用不到的段）：
 ```bash
-brew install pyenv
+typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
+  status                  # 命令退出码
+  command_execution_time  # 执行时长
+  virtualenv              # Python 虚拟环境
+  pyenv                   # Python 版本
+  nodeenv                 # Node 环境
+  java_version            # Java 版本
+  time                    # 当前时间
+)
+```
+
+Git 大仓库性能优化（超过 0.05s 改为异步，不阻塞提示符）：
+```bash
+typeset -g POWERLEVEL9K_VCS_MAX_SYNC_LATENCY_SECONDS=0.05
 ```
 
 修改后重载生效：
@@ -1229,7 +1275,32 @@ brew install pyenv
 source ~/.p10k.zsh
 ```
 
-切回 Dracula zsh 主题：将 `ZSH_THEME` 改回 `"dracula"` 即可。
+**重新运行配置向导**（随时调整风格，无需重装）：
+```bash
+p10k configure
+```
+
+#### zsh 提示符主题切换
+
+两套方案均已安装，切换只需改 `~/.zshrc` 中的一行，然后 `source ~/.zshrc`：
+
+| 方案 | ZSH_THEME 值 | 特点 |
+|------|-------------|------|
+| **Powerlevel10k**（当前） | `powerlevel10k/powerlevel10k` | 信息丰富、Powerline 图标、git 状态、执行时间 |
+| **纯 Dracula zsh** | `dracula` | 简洁风格、与 Dracula 终端配色完整统一 |
+
+切换示例（切到纯 Dracula）：
+```bash
+# ~/.zshrc 中改这一行
+ZSH_THEME="dracula"
+source ~/.zshrc
+```
+
+切回 Powerlevel10k：
+```bash
+ZSH_THEME="powerlevel10k/powerlevel10k"
+source ~/.zshrc
+```
 
 ### Sublime
 
